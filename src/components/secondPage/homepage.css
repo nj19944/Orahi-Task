@@ -1,0 +1,13 @@
+.productlist{
+    display: flex;
+    justify-content: space-around;
+}
+.heading{
+    text-align: center;
+    flex-grow: inherit;
+}
+
+.product{
+    background-color: khaki;
+    
+}
