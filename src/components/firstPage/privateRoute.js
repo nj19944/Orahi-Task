@@ -3,7 +3,7 @@ import { Redirect, Route} from 'react-router-dom';
 import {withRouter} from 'react-router-dom'
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
-    console.log(localStorage.getItem('rememberMe'))
+    
     return (
         // <Route path='/home' component={Vartika} />
         <Route

@@ -9,7 +9,9 @@ import {withRouter} from 'react-router-dom'
   {
     super(props);
     this.logout = this.logout.bind(this)
+    // localStorage.setItem('data',this.props.data)
   }
+  
   logout(event)
   {
     event.preventDefault();
@@ -17,6 +19,11 @@ import {withRouter} from 'react-router-dom'
     this.props.history.push('/')
   }
   render () {
+    for(let i in this.props.data)
+    {
+      console.log(i);
+      localStorage.setItem(this.props.data[i].month, this.props.data[i].stat )
+    }
     var commentNodes = this.props.data.map(comment => (
         <Product key={comment.month} author={comment.month} stat={comment.stat} className="product"><br/>
         </Product>

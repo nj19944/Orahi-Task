@@ -6,7 +6,7 @@ const Product = ({author, stat}) => {
     const data = {};
     data.month = author;
     data.stat = stat;
-    console.log(data)
+    //console.log(data)
     return(
   <tr className="product">
     <td>{author}</td>
